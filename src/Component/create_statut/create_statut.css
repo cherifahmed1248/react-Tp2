@@ -1,0 +1,33 @@
+.statut{
+    background-color:white;
+} 
+.img{
+    width: 1088px;
+    height: 322px;
+}
+.pubparent{
+    background-color: #f0f2f5;
+}
+.pub{
+    background-color: #ffffff;
+}
+body{
+    background-color: #f0f2f5;
+}
+.mur{
+    margin-top: 2%;
+    background-color: #ffffff;
+}
+
+.comment .avatarx{
+    width: 5%;
+    float: left;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+.comment > span {
+    float: left;
+    width: 93%;
+    margin-top: 1%;
+    border-width:50;
+}

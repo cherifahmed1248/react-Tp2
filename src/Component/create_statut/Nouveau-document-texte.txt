@@ -1,0 +1,68 @@
+import React from "react";
+import "./App.css";
+import "antd/dist/antd.css";
+import Item from "./Component/item/Item.js";
+import Recherche from "./Component/create_statut/create_statut.js";
+import { Layout, Menu } from "antd";
+import {
+  UserOutlined,
+  VideoCameraOutlined,
+  UploadOutlined
+} from "@ant-design/icons";
+
+import { Row, Col } from "antd";
+const { Header, Sider, Content } = Layout;
+
+function App() {
+  return (
+    <div>
+      <Layout>
+        <Header
+          className="site-layout-sub-header-background"
+          style={{ padding: 0, height: 200 }}
+        >
+          <img
+            src={require("./premier-league.jpg")}
+            className="premier-league"
+            alt="premier-league"
+          ></img>
+        </Header>
+        <Layout>
+          <Sider>
+            <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
+              <Menu.Item key="1">
+                <UserOutlined />
+                <span className="nav-text">Home</span>
+              </Menu.Item>
+              <Menu.Item key="2">
+                <VideoCameraOutlined />
+                <span className="nav-text">Results</span>
+              </Menu.Item>
+              <Menu.Item key="3">
+                <UploadOutlined />
+                <span className="nav-text">Clubs</span>
+              </Menu.Item>
+              <Menu.Item key="4">
+                <UserOutlined />
+                <span className="nav-text">Players</span>
+              </Menu.Item>
+            </Menu>
+          </Sider>
+          <Content style={{ margin: "24px 16px 0" }}>
+            <div
+              className="site-layout-background"
+              style={{ padding: 24, minHeight: 360 }}
+            >
+              <div>
+                <Recherche />
+                <br />
+              </div>
+            </div>
+          </Content>
+        </Layout>
+      </Layout>
+    </div>
+  );
+}
+
+export default App;

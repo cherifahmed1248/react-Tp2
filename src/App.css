@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 28px 16px 0;
+  float: left;
+}
+.site-layout-background {
+  background: rgb(255, 255, 255);
+}
+ul ,.BGgris,#menu,#barreLeft,#chatbarre {
+  background: #f0f2f5;
+}
+#ingLien{
+  color: black;
+}
+.menu{
+  clear: left
+
+}
+
+#fb{
+  float: left;
+  width: 32px;
+  margin: 15px 0 0 50px;
+  color:   #3b5998 ;
+
+}
+.Search > span{
+  float: left;
+  width: 75%;
+}
+#SpanSearch{
+  float: left;
+  width: 75%;
+}
+#header,#headerul {
+  background-color: #3d5b99;
+  color: #3d5b99;
 }
